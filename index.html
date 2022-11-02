@@ -105,5 +105,31 @@
 
 
 <script src="script.js"></script>
+    
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqBLHW9_k-qrUvlrMBc6FZU4znpGExMfM",
+      authDomain: "video-player-e5cc3.firebaseapp.com",
+      databaseURL: "https://video-player-e5cc3-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "video-player-e5cc3",
+      storageBucket: "video-player-e5cc3.appspot.com",
+      messagingSenderId: "1097048601722",
+      appId: "1:1097048601722:web:9971feb89aa0fa90e777c3"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import{getDatabase}
+    from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"
+
+    const db = getDatabase();
+  </script>
 </body>
 </html>
